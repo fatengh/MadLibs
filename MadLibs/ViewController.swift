@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var formButton: UIBarButtonItem!
 
     
+
+    var adj : String = ""
+    var verb1 : String = ""
+    var verb2 : String = ""
+    var noun : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         formButton.tintColor = .white
@@ -25,8 +31,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwindMain(_ unwindSegue: UIStoryboardSegue) {
-         let dec = unwindSegue.source as! SeconedViewController
-            textLebel.text = "We are having a perfectly \(dec.adjectiveLebel.text!) time right now. Later we will \(dec.verb1.text!) and \(dec.verb2.text!) in the \(dec.nounLebel.text!)."
-                
-            }
+        textLebel.text = "we are having a \(adj) time now. Later we \(verb1) run and \(verb2)  in the \(noun)"
+
+}
 }
