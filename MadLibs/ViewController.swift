@@ -26,11 +26,8 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func moveToForm(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "Linked" , sender: self)
-    }
-    
     @IBAction func unwindMain(_ unwindSegue: UIStoryboardSegue) {
+        
         textLebel.text = "we are having a \(adj) time now. Later we \(verb1) run and \(verb2)  in the \(noun)"
 
 }
